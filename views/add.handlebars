@@ -1,0 +1,50 @@
+<div class="home">
+    <a href="/"><i class="fa-solid fa-house"></i></a>
+</div>  
+
+<div class="layer">
+    <div class="cab">
+        <h1>Adicionar Trabalho</h1>
+        <p>Complete as informações para adicionar um novo trabalho</p>
+    </div>
+
+    <div class="visual">
+        <div class="form-box">
+            <form action="/works/add" method="POST">
+                <div class="campo">
+                    <label>Titulo</label>
+                    <input name="titulo" type="text" id="titulo" oninput="repeatText()" required>
+                </div>
+                <div class="campo">
+                    <label>Gravata</label>
+                    <input name="gravata" type="text" id="gravata" oninput="repeatText()" required>
+                </div>
+                <div class="campo">
+                    <label>Lide </label>
+                    <textarea name="lide" id="lide" cols="30" rows="10" oninput="repeatText()" required></textarea>
+                </div>
+                <div class="campo">
+                    <label>Link</label>
+                    <input name="link" type="url" id="link" required>
+                </div>
+                <div class="campo">
+                    <label>Link da Imagem</label>
+                    <input name="imagem" type="url" id="imagem" required>
+                </div>
+                <button class="campo" type="submit">Salvar</button>
+            </form>   
+        </div>
+
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/RedeMassa.jpg" alt=""/>  
+            </div>
+            <div class="card-info">
+                <h2 id="repeatTitulo">Titulo</h2>
+                <h3 id="repeatGravata">Gravata do trabalho</h3>
+                <p id="repeatLide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur officiis fuga reiciendis non ex aperiam deleniti amet illum modi consequatur ea tempore maiores architecto quod illo assumenda, exercitationem repudiandae ipsa.</p>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+    </div>
+</div>

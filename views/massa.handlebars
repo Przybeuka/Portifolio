@@ -1,0 +1,25 @@
+<div class="home">
+    <a href="/"><i class="fa-solid fa-house"></i></a>
+</div>  
+
+<div class="layer">
+    <div class="cab">
+        <h1>Trabalhos do Massa News</h1>
+        <p>Meus Trabalhos</p>
+    </div>
+
+    <div class="barra-massa">
+        {{#each works local="massa"}}
+            <a class="rep" href={{dataValues.link}} target="_blank">
+                <div class="rep-img-wrapper">
+                    <img src={{dataValues.imagem}} alt=""/>  
+                </div>
+                <div class="rep-info">
+                    <h2>{{dataValues.titulo}}</h2>
+                    <h3>{{dataValues.gravata}}</h3>
+                    <p>{{dataValues.lide}}</p>
+                </div>
+            </a>
+        {{/each}}
+    </div>
+</div>

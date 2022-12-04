@@ -1,0 +1,156 @@
+<header>
+    <div class="img-wrapper">
+        <img src="/img/bg.jpg" alt="">
+    </div>
+    <div class="banner">
+        <div class="img-profile">
+            <img id="img-perf" src="/img/pf.jpg" alt="">
+        </div>
+        <h1>Valeska Macedo</h1>
+        <p>Jornalista em Formação</p>
+        <a href="#projetos">
+            <button>Saiba mais</button>
+        </a>
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="hamburguer">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+        <span>fechar</span>
+    </div>  
+
+    <aside class="sidebar">
+        <nav>
+            <ul class="menu">
+            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+            <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li class="menu-item"><a href="#experiencias" class="menu-link">Experiências</a></li>
+            <li class="menu-item"><a href="#formação" class="menu-link">Formação</a></li>
+            </ul>
+        </nav>
+
+        <div class="dev-add">
+            <a href="/works/login"><i class="fa-solid fa-gear"></i></a>
+        </div>
+
+        <div class="social-media">
+            <a href="Currículo.pdf" download="Currículo.pdf" title="Currículo"><i class="fas fa-file"></i></a>
+            <a href="https://www.linkedin.com/in/valeskamacedo" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcRwPkQqNkllGQXwWCccpvcKVghPXFqMGTWzdccmcbTlbNghNkSpScJPgzrwZFHDmjWHjghpq"  
+            target="_blank" title="Gmail"><i class="fas fa-envelope"></i></a>
+        </div>
+    </aside>
+</div>
+
+<section class="sessao-projetos"  id="projetos">
+    
+    <div class="swiper mySwiper sessao-projetos"  id="projetos">
+        <div class="sessao-header">
+            <h1>Principais Projetos</h1>
+        </div>
+        
+        <div class="swiper-wrapper">
+            {{#each works}}
+                <div class="swiper-slide projetos">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src={{dataValues.imagem}} alt=""/>  
+                        </div>
+                        <div class="card-info">
+                            <h2>{{dataValues.titulo}}</h2>
+                            <h3>{{dataValues.gravata}}</h3>
+                            <p>{{dataValues.lide}}</p>
+                            <a href={{dataValues.link}} target="_blank"><button>Saiba Mais</button></a>
+                        </div>
+                    </div>
+                </div> 
+             {{/each}}
+        </div>     
+
+        <div class="swiper-button-next" id="passador"></div>
+        <div class="swiper-button-prev" id="passador"></div>
+        <div class="swiper-pagination"  id="bolota"></div>      
+    </div>
+</section>
+
+<section class="sessao-redes">
+        <div class="redes">
+            <div class="content">
+                <img src="img/RedeMassa.jpg" alt="">
+                <h2>Rede Massa<br><span>Massa News</span></h2>
+                <a href="/works/massa"  target="_blank">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <div class="redes">
+            <div class="content">
+                <img src="img/RicMais.jpg" alt="">
+                <h2>Grupo Ric<br><span>Ric Mais</span></h2>
+                <a href="https://ricmais.com.br/autor/valeska-macedo/"  target="_blank">SAIBA MAIS</a>
+            </div>
+        </div>
+
+         <div class="redes">
+            <div class="content">
+                <img src="img/RedeTeia.jpg" alt="">
+                <h2>Rede Teia<br><span>JorUp</span></h2>
+                <a href="#"  target="_blank">SAIBA MAIS</a>
+            </div>
+        </div>
+</section>
+
+<section class="experiencias" id="experiencias">
+    
+    <div class="sessao-header">
+        <h1>Experiências</h1>
+    </div>
+
+    <div class="barra-xp">
+            <div class="sec-xp">
+                    <img src="img/Radio.jpg" alt="">
+                    <p>- Em 2020, primeiro ano da faculdade, iniciei um estágio na rádio Curitiba Mais FM. Trabalhei como repórter digital (produzia reportagens para o site), produtora de conteúdo e era locutora/apresentadora do programa "As Mais Pedidas", que ia ao ar das 17h às 18h.</p>
+            </div>  
+            <div class="sec-xp">  
+                        
+                    <p>- Em 2021, estagiei como assessora de imprensa na Central Press Brazil, onde escrevia releases e notas. Além disso, fazia entrevistas, clippings, follow up e edição de vídeos.</p>
+                    <img src="img/CentralP.jpeg" alt="">
+            </div>  
+            <div class="sec-xp">
+                    <img src="img/RedeMassaMic.jpeg" alt="">
+                    <p>- Em 2021, meses depois, comecei a trabalhar na Rede Massa/SBT. Como estagiária, produzia reportagens para o portal Massa News, realizava edição de vídeos, produção de conteúdo para redes sociais e coberturas especiais.
+                    <br>- Em 2022, o Grupo Massa me promoveu a Produtora Executiva Pleno. Atualmente, trabalho como repórter digital, com produções jornalísticas para o portal Massa News.</p>
+            </div>  
+            <div class="sec-xp">
+                    <p>- Em 2022, também integrei a equipe do Grupo RIC Paraná. Fui estagiária do portal RIC Mais e produzia reportagens focadas em segurança pública, política e economia. Além disso, fui repórter da Agenda Cultural.
+                    </p>
+                    <img src="img/RicMaisMic.jpg" alt="">
+            </div>  
+             <div class="sec-xp">
+                    <img src="img/RedeTeia.jpeg" alt="">
+                    <p>- Em 2020, fui repórter das Eleições Municipais. Participei da cobertura em formato de vídeo, com boletins ao vivo sobre o que acontecia durante o dia de votações. 
+                    <br>- Em 2020, também participei da cobertura do Mês do Orgulho LGBTQIA. As produções eram focadas em reportagens escritas para a Rede Teia, veículo de comunicação do curso de Jornalismo da UP.
+                    <br>- Em 2021, participei do programa de rádio da UP como locutora.
+                    <br>- Em 2021, fui âncora e editora-chefe do Tela Un, telejornal da UP. 
+                    <br>- Em 2022, realizei a cobertura da Copa do Mundo como repórter. 
+                    </p>
+            </div>  
+    </div> 
+
+</section> 
+
+<section class="forma" id="formação">
+    <div>
+        <div class="sessao-header">
+            <h1>Formação</h1>
+        </div>
+
+        <div class="feitos">
+            <p>Curso Bacharel em jornalismo na Universidade Positivo, no qual me encontro no 6° período. previsão de termino no final do ano de 2023.</p>
+            <img src="/img/UNIPOSI.png" alt="">
+        </div>
+    </div>
+</section>  
